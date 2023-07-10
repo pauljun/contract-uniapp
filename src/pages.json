@@ -1,0 +1,136 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarTitleText": "Hello World",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/trade/trade",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/share/share",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/account/account",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/records/records",
+			"style": {
+				"navigationBarTitleText": "%share.record%",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/certificate/certificate",
+			"style": {
+				"navigationBarTitleText": "%certificate.title%",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/whitepaper/whitepaper",
+            "style" :
+            {
+                "navigationBarTitleText": "Whitepaper",
+                "enablePullDownRefresh": false
+            }
+
+        },{
+            "path" : "pages/message/message",
+            "style" :
+            {
+                "navigationBarTitleText": "%message.title%",
+                "enablePullDownRefresh": false
+            }
+
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#1989fa",
+		"iconfontSrc": "/static/font/iconfont.ttf",
+		"backgroundColor": "#fff",
+		"list": [{
+				"text": "%index.home%",
+				"pagePath": "pages/index/index",
+				"iconfont": {
+					"text": "\ue64c",
+					"selectedText": "\ue64c",
+					"color": "#333",
+					"selectedColor": "#1989fa"
+				}
+			},
+			{
+				"text": "%index.wallet%",
+				"pagePath": "pages/trade/trade",
+				"iconfont": {
+					"text": "\ue69a",
+					"selectedText": "\ue69a",
+					"color": "#333",
+					"selectedColor": "#1989fa"
+				}
+			},
+			{
+				"text": "%index.share%",
+				"pagePath": "pages/share/share",
+				"iconfont": {
+					"text": "\ue778",
+					"selectedText": "\ue778",
+					"color": "#333",
+					"selectedColor": "#1989fa"
+				}
+			},
+			{
+				"text": "%index.account%",
+				"pagePath": "pages/account/account",
+				"iconfont": {
+					"text": "\ue65e",
+					"selectedText": "\ue65e",
+					"color": "#333",
+					"selectedColor": "#1989fa"
+				}
+			}
+		]
+	}
+}
